@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/profile.css">
+    <title>Bubbles</title>
+</head>
+
+<body>
+    <nav>
+        <div class="spacer"></div>
+        <ul>
+            <li><a href="/html/chatroom.html">Chatroom</a></li>
+            <li><a href="#" id="profile-logout">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="profile-details">
+        <label>First Name</label>
+        <label id="firstName"></label>
+        <br>
+        <label>Last Name</label>
+        <label id="lastName"></label>
+        <br>
+        <label>Email Adress</label>
+        <label id="email"></label>
+        <br>
+        <label>Profile Picture</label>
+        <img alt="Profile Picture">
+        <br>
+        <input type="file" accept="image/*">
+    </div>
+    <script type="module" src="/js/firebase.js"></script>
+    <script type="module" src="../js/profile.js"></script>
+</body>
+
+</html>

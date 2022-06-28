@@ -5,63 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="/css/forms.css">
+    <link rel="stylesheet" href="../css/forms.css">
     <title>Bubbles</title>
 </head>
 <body>
     <nav>
         <div class="chatName">Bubbles</div>
-        <a href="#" class="toggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
         <ul class="navElements">
-            <li><a href="/html/index.html">Home</a></li>
-            <li><a href="/html/about.html">About</a></li>
-            <li><a href="/html/login.html">Login</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
     </nav>
     <main>
-       <section class="loginForm">
-        <form action="#">
-            <div class="error-text">Error message!</div>
+       <section class="signUpForm">
+        <form action="#" id="signup-form">
             <div class="fieldInput">
                 <label>First Name</label>
                 <br>
-                <input type="text" placeholder="First Name">
+                <input type="text" id="signup-fname" placeholder="Enter your first name" required>
             </div>
             <div class="fieldInput">
                 <label>Last Name</label>
                 <br>
-                <input type="text" placeholder="Last Name">
+                <input type="text" id="signup-lname" placeholder="Enter your last name" required>
             </div>
             <div class="fieldInput">
                 <label>Email Adress</label>
                 <br>
-                <input type="text" placeholder="Enter your email">
+                <input type="email" id="signup-email" placeholder="Enter your email" required>
             </div>
             <div class="fieldInput">
                 <label>Password</label>
                 <br>
-                <input type="password" placeholder="Enter your password">
+                <input type="password" id="signup-password" placeholder="Enter your password" required>
             </div>
             <div class="fieldInput">
-                <label>Select Profile Image</label>
+                <label>Confirm Password</label>
                 <br>
-                <input type="file" >
+                <input type="password" id="signup-cpassword" placeholder="Enter your password" required>
             </div>
             <div class="fieldButton">
-               
-                <input type="submit" value="Register">
+                <input type="submit" id="signup-btn" value="Sign up">
             </div>
         </form>
-        <div class="link">Already have account? <a href="/html/login.html">Login now</a></div>
+        <div class="link">Already have an account? <a href="login.html">Login now</a></div>
        </section>
     </main>
-    <footer>
-
-    </footer>
-    <script src="../js/navigationbar.js"></script>
+    <script type="module" src="/js/firebase.js"></script>
+    <script type="module" src="/js/signup.js"></script>
 </body>
 </html>
